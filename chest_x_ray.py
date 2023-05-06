@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1bVCzjYIgUi71TZOPyvJrrdIu9jNAvtxS
 """
 
-!pip install -Uqq fastbook
+pip install -Uqq fastbook
 import fastbook
 fastbook.setup_book()
 
