@@ -81,7 +81,6 @@ learn_inf.predict('/content/drive/MyDrive/fastai/test/NORMAL/IM-0109-0001.jpeg')
 learn_inf.predict('/content/drive/MyDrive/fastai/test/PNEUMONIA/person101_bacteria_484.jpeg')
 
 import os
-!pip install -q streamlit
 
 import streamlit as st
 
