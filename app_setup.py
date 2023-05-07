@@ -1,6 +1,9 @@
 import os
-
+import pickle
 import streamlit as st
+import numpy as np
+
+model = pickle.load(open('export.pkl', 'rb')
 
 st.title("Pneumonia Chest Xray detection")
 html_temp = """
@@ -11,14 +14,13 @@ html_temp = """
 st.markdown(html_temp, unsafe_allow_html = True)
 
 safe_html ="""  
-        <div style="background-color:#80ff80; padding:10px >
-        <h2 style="color:white;text-align:center;"> The Abalone is young</h2>
-        </div>
-        """
-        if st.button("Predict the age"):
-        output = predict_age(Length,Diameter,Height,Whole_weight,
-                             Shucked_weight,Viscera_weight,Shell_weight)
-        st.success('The age is {}'.format(output))
+<div style="background-color:#80ff80; padding:10px >
+<h2 style="color:white;text-align:center;"> The Abalone is young</h2>
+</div>
+"""
+if st.button("Predict the type"):
+output = predict_age(Length,Diameter,Height,Whole_weight, Shucked_weight,Viscera_weight,Shell_weight)
+st.success('The age is {}'.format(output))
 
         if output == 1:
             st.markdown(safe_html,unsafe_allow_html=True)
