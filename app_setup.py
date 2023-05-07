@@ -5,10 +5,27 @@ import streamlit as st
 st.title("Pneumonia Chest Xray detection")
 html_temp = """
 <div style="background:#025246 ;padding:10px">
-<h2 style="color:white;text-align:center;"> Abalone Age Prediction ML App </h2>
+<h2 style="color:white;text-align:center;"> Pneumonia ML App </h2>
 </div>
 """
 st.markdown(html_temp, unsafe_allow_html = True)
+
+safe_html ="""  
+        <div style="background-color:#80ff80; padding:10px >
+        <h2 style="color:white;text-align:center;"> The Abalone is young</h2>
+        </div>
+        """
+        if st.button("Predict the age"):
+        output = predict_age(Length,Diameter,Height,Whole_weight,
+                             Shucked_weight,Viscera_weight,Shell_weight)
+        st.success('The age is {}'.format(output))
+
+        if output == 1:
+            st.markdown(safe_html,unsafe_allow_html=True)
+        elif output == 2:
+            st.markdown(warn_html,unsafe_allow_html=True)
+        elif output == 3:
+            st.markdown(danger_html,unsafe_allow_html=True)
 
 
 def file_selector(folder_path='.'):
