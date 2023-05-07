@@ -2,6 +2,14 @@ import os
 
 import streamlit as st
 
+st.title("Pneumonia Chest Xray detection")
+html_temp = """
+<div style="background:#025246 ;padding:10px">
+<h2 style="color:white;text-align:center;"> Abalone Age Prediction ML App </h2>
+</div>
+"""
+st.markdown(html_temp, unsafe_allow_html = True)
+
 
 def file_selector(folder_path='.'):
     filenames = os.listdir(folder_path)
