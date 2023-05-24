@@ -7,16 +7,16 @@ Original file is located at
     https://colab.research.google.com/drive/1vAAii6pc9p7T_GgXlazVIiXOMzr7LGDW
 """
 
-# !pip install pyngrok
+pip install pyngrok
 
-# !pip install -q streamlit
+pip install -q streamlit
 
-# !pip install ipykernel>=5.1.2
-# !pip install pydeck
+pip install ipykernel>=5.1.2
+pip install pydeck
 
-# import streamlit as st
+import streamlit as st
 
-# !pip install -Uqq fastbook
+pip install -Uqq fastbook
 import fastbook
 fastbook.setup_book()
 
