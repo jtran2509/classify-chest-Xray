@@ -4,7 +4,7 @@ import streamlit as st
 import numpy as np
 
 
-pickle_in = open('export.pkl', 'rb')
+pickle_in = open('export.pkl', 'wb')
 classifier = pickle.load(pickle_in)
 
 st.title("Pneumonia Chest Xray detection")
