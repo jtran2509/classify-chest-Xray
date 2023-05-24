@@ -3,6 +3,11 @@ import pickle
 import streamlit as st
 import numpy as np
 
+from fastai import *
+from fastai.vision import *
+from fastai.vision import image
+
+
 learn_inf = load_learner('export.pkl')
 
 def file_selector(folder_path='.'):
