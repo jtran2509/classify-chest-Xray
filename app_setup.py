@@ -15,7 +15,6 @@ st.markdown(html_temp, unsafe_allow_html = True)
 
 st.button('Predict')
 
-
 def file_selector(folder_path='.'):
     filenames = os.listdir(folder_path)
     selected_filename = st.selectbox('Select a file', filenames)
@@ -30,6 +29,16 @@ if __name__ == '__main__':
             folder_path = st.text_input('Enter folder path', '.')
         filename = file_selector(folder_path=folder_path)
         st.write('You selected `%s`' % filename)
+
+
+from prediction import predict
+import joblib
+def predict(data):
+    clf = joblib.load('xray.sav')
+    return clf.predict(data)
+
+if st.button('Predict'):
+    result = predict()
 
 
 
