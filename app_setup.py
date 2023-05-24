@@ -3,8 +3,7 @@ import pickle
 import streamlit as st
 import numpy as np
 
-
-pickle_in = open('export.pkl', 'wb')
+pickle_in = open('export.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 
