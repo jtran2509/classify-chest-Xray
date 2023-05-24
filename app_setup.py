@@ -3,12 +3,10 @@ import pickle
 import streamlit as st
 import numpy as np
 
-from fastai import *
-from fastai.vision import *
-from fastai.vision import image
 
+pickle_in = open('export.pkl', 'wb')
+classifier = pickle.load(pickle_in)
 
-learn_inf = load_learner('export.pkl')
 
 def file_selector(folder_path='.'):
     filenames = os.listdir(folder_path)
