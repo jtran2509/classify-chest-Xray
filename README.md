@@ -37,4 +37,4 @@ https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
 | --- | --- |
 | Professional Email | dungvn1999@gmail.com |
 | LinkedIn | https://www.linkedin.com/in/dungtran99/ |
-| Project Link | [https://github.com/jtran2509/classify-chest-Xray](Classifying Chest Xrays) |
+| Project Link | [Classifying Chest Xrays](https://github.com/jtran2509/classify-chest-Xray) |
